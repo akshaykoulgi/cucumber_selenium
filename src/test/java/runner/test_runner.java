@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 glue={"defination"},
 dryRun = false,
 tags = "@PositiveTesting",
-plugin = {"html:testoutput/cucumber.html","junit:testoutput/cucumber.xml"})   
+plugin = {"html:testoutput/cucumber.html","junit:testoutput/cucumber.xml","json:testoutput/cucumberjason.xml"})   
 
 public class test_runner {
 

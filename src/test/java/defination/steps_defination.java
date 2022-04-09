@@ -41,22 +41,26 @@ public class steps_defination {
 	}
 	
 	@Then("i should see the username as {string}")
-	public void i_should_see_the_username_as_harry_den(String string) {
+	public void i_should_see_the_username_as_harry_den(String string) throws InterruptedException {
 		if(string=="Harry Den") {
 			
 				
 				String username = driver.findElement(By.className("hidden-xs")).getText();
 				Assert.assertEquals(username, string);
 				System.out.println(username);
+				driver.findElement(By.className("hidden-xs")).click();
+				
 				driver.close();
 		}
 		else {
 			//@Then("i should see the admin as {string}")
 			//public void i_should_see_the_admin_as(String string) {
+			
 			 String admin = driver.findElement(By.className("hidden-xs")).getText();
 				Assert.assertEquals(admin, string);
 				System.out.println(admin);
-				driver.close();	 
+				driver.findElement(By.className("hidden-xs")).click();
+				driver.close();
 	
 			}
 		}
