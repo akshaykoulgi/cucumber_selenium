@@ -27,8 +27,8 @@ Then i should see the username as "<username>"
 
 Examples:
 |user|pass|username|
-|user|user|Harry Den|
-|user|user|Harry Den|
+|admin|admin|Harry Den|
+|admin|admin|Harry Den|
 |admin|admin|SkillRary Admin|
 
 #@stands for tags
